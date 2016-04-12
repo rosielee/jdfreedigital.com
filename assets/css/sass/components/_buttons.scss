@@ -1,0 +1,61 @@
+.btn {
+	display: inline-block;
+	text-decoration: none;
+	color: $black;
+	@extend .f_r;
+	@extend .typo-bold;
+}
+
+.btn-red {
+	color: $white;
+	background-color: $red;
+	width: 125px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	@include prefix(transition, 0.3s);
+	position: relative;
+	z-index: 1;
+	&:hover {
+		background-color: $black;
+	}
+}
+
+// ========================================
+// gender
+// ========================================
+
+.gender-women {
+	.btn-women {
+		background-color: rgba($white, 0);
+		box-shadow: none;
+		// opacity: 1;
+		color: rgba($black, 1);
+	}
+}
+
+.gender-men {
+	.btn-men {
+		background-color: rgba($white, 0);
+		box-shadow: none;
+		// opacity: 1;
+		color: rgba($black, 1);
+	}
+}
+
+.btn-men,
+.btn-women {
+	background-color: $white;
+	padding: 20px 0;
+	box-shadow: inset -1px -1px 2px 0px rgba($black, 0.3), inset 1px -1px 2px 0px rgba($black, 0.3);
+	// opacity: 0.4;
+	color: rgba($black, 0.4);
+	&:hover {
+		// opacity: 1;
+		color: rgba($black, 1);
+	}
+}
+
+.btn-women {
+
+}

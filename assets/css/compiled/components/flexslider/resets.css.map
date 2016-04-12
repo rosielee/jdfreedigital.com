@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;;AAQE;;;oBACQ;EAEN,OAAO,EAAE,IAAI;;AAMjB;;;mBAGoB;EAElB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,IAAI;;AAIlB,oBAAqB;EAEnB,cAAc,EAAE,UAAU",
+"sources": ["../../../sass/components/flexslider/resets.scss"],
+"names": [],
+"file": "resets.css"
+}

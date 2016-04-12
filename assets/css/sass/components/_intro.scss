@@ -1,0 +1,7 @@
+.intro-free p {
+	min-height: 120px;
+	@include breakpoint(mobile) {
+		max-width: 320px;
+	    min-height: inherit;
+	}
+}

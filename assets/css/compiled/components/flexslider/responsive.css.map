@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;;AAIA,oCAAuC;EAInC,8BAAW;IAET,OAAO,EAAE,CAAC;IACV,IAAI,EAAE,IAAI;EAIZ,8BAAW;IAET,OAAO,EAAE,CAAC;IACV,KAAK,EAAE,IAAI",
+"sources": ["../../../sass/components/flexslider/responsive.scss"],
+"names": [],
+"file": "responsive.css"
+}

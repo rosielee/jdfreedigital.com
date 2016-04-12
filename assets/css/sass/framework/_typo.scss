@@ -1,0 +1,80 @@
+html {
+	font-family: "circular-std-book";
+}
+
+body {
+	letter-spacing: 0.02em;
+}
+
+p {
+	letter-spacing: 0.06em;
+}
+
+// ========================================
+// font weight
+// ========================================
+
+.typo-normal {
+	font-family: "circular-std-book";
+}
+
+.typo-bold {
+	font-family: "circular-std-bold";
+}
+
+// ========================================
+// alignment
+// ========================================
+
+.typo-left {
+	text-align: left;
+}
+
+.typo-right {
+	text-align: right;
+}
+
+.typo-center {
+	text-align: center;
+}
+
+.typo-justify {
+	text-align: justify;
+}
+
+// ========================================
+// sizes
+// ========================================
+
+.f_xl {
+	@include fontSize( 45px );
+	@include lineHeight( 49px );
+}
+
+.f_l {
+	@include fontSize( 20px );
+	@include lineHeight( 4px );
+}
+
+.f_m {
+	@include fontSize( 15px );
+	@include lineHeight( 19px );
+}
+
+.f_r {
+	@include fontSize( 14px );
+	@include lineHeight( 18px );
+}
+
+.f_s {
+	@include fontSize( 13px );
+	@include lineHeight( 17px );
+}
+
+// ===========================================================
+// colours
+// ===========================================================
+
+.typo-red {
+	color: $red;
+}

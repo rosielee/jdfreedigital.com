@@ -1,0 +1,31 @@
+// ========================================
+// base
+// ========================================
+
+html {
+	// background: url(/assets/img/flyknit--smaller.png) 50% / cover, url(/assets/img/hex);
+	// background: url(/assets/img/flyknit.jpg) 50% / cover no-repeat;
+	background-image: url(/assets/img/flyknit--smaller.png), url(/assets/img/hex.jpg);
+	background-repeat: no-repeat, repeat;
+	background-size: 100%, 18px;
+	background-position: top right, 0;
+	width: 100%;
+	height: 100%;
+	@include breakpoint(mobile) {
+	    background-size: 100%, 36px;
+	    background: url(/assets/img/hex.jpg);
+	}
+}
+
+.container {
+	position: relative;
+	width: 996px; // visual == 976px
+	margin: 0 auto;
+	// padding: 0 0;
+	// height: 100vh;
+	// background-color: rgba(255, 0, 0, 0.22);
+	@include breakpoint(mini-mobile) {
+		width: 100%;
+		padding: 0 10px;
+	}
+}

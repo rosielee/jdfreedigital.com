@@ -1,0 +1,75 @@
+.hotspot {
+	// display: none;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+
+	// WITH PNG
+	// @extend .hotspot-cross;
+
+	// WITH CSS
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+	background-size: 30px;
+	background-color: rgba(103, 103, 103, 0.7);
+	border-radius: 100%;
+	&:before {
+		position: relative;
+		content: "";
+	}
+	&:after {
+		position: absolute;
+		content: "+";
+		width: 24px;
+		height: 24px;
+		background-color: black;
+		border-radius: 100%;
+		left: 4px;
+		top: 4px;
+		color: #fff;
+		line-height: 20px;
+		letter-spacing: 0px;
+		@include prefix (transition, 50ms);
+	}
+	&:hover {
+		&:after {
+			// content: "-";
+			width: 32px;
+			height: 32px;
+			line-height: 28px;
+			top: 0;
+			left: 0;
+		}
+	}
+	@include breakpoint(mobile) {
+	    display: none;
+	}
+}
+
+// ========================================
+// show / hide :: onhover
+// ========================================
+
+.shoe-side,
+.shoe-back,
+.shoe-sole {
+	position: relative;
+}
+
+// ========================================
+// hotspot content
+// ========================================
+
+.hotspot-content {
+	display: none;
+	position: absolute;
+	bottom: 2px;
+	width: 100%;
+	text-align: center;
+	@include breakpoint(mobile) {
+	    display: block;
+	}
+}
